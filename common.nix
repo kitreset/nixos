@@ -184,6 +184,7 @@
             exiftool
             unzip
             libsecret
+            libglvnd
 
             # Dev Environment
             claude-code-nix.packages.${pkgs.stdenv.hostPlatform.system}.claude-code
@@ -246,8 +247,9 @@
             syntaxHighlighting.enable = true;
             shellAliases = {
             # Claude Code / Zed
-            c = "claude";
+            cc = "claude";
             z = "zeditor . && exit";
+            c = "code . && exit";
 
             # `uv`
             ur = "uv run mypy src && uv run src/main.py";
@@ -346,6 +348,7 @@
             enable = true;
             extraConfig = ''
             set -g mouse on
+            setw -g xterm-keys on
             set -g destroy-unattached on
             set -g status-style 'bg=#313244 fg=#89b4fa'
             set -g window-status-current-style 'bg=#45475a fg=#89b4fa bold'
