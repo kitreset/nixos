@@ -185,6 +185,9 @@
             unzip
             libsecret
             libglvnd
+            winbox4
+            wineWow64Packages.stable
+            winetricks
 
             # Dev Environment
             claude-code-nix.packages.${pkgs.stdenv.hostPlatform.system}.claude-code

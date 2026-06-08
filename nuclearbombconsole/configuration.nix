@@ -130,6 +130,7 @@
 
         # Web Browsing
   		librewolf
+  		google-chrome
 
         # Recording
         (pkgs.wrapOBS {
